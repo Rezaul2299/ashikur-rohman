@@ -1,0 +1,85 @@
+/* common css*/
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=PT+Sans:wght@700&family=Poppins:wght@300;400;500;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryFont: "Poppins", sans-serif;
+    --secondaryFont: "PT Sans", sans-serif;
+    --primaryColor: #fc0;
+    --secondaryColor: #353535;
+  }
+
+ul, ol{
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+
+}
+ 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+span,
+ol {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--primaryFont);
+}
+
+/* common css end */
+
+/* nav strats*/
+nav {
+    background: #fff;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 16px !important;
+  }
+  
+  
+  
+  #customNav ul li a {
+    color: var(--secondaryColor);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 200%; /* 30px */
+    padding: 18px 22px 5px;
+    display: block;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  #customNav ul li a::before {
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: var(--secondaryColor);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.25s;
+  }
+  
+  #customNav ul li:hover a::before {
+    width: 100%;
+  }
+  
+  nav .navbar-toggler {
+    border: none;
+  }
+  nav .navbar-toggler:focus {
+    box-shadow: none;
+/* nav end*/

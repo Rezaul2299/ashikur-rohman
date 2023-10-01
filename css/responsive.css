@@ -1,0 +1,13 @@
+
+@media (min-width: 992px) {
+   nav {
+    box-shadow:none;
+}
+}
+
+
+@media  (max-width: 991px){
+    #customNav ul li a {
+    text-align: right;
+}
+}
